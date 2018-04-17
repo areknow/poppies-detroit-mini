@@ -1,0 +1,28 @@
+#hero {
+  height: 600px;
+  background: #F5BEB5;
+  position: relative;
+  .inner {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    text-align: center;
+    .logo {
+      height: 30px;
+      width: 200px;
+      background: red;
+      display: inline-block;
+    }
+  }
+}
+
+#events {
+  background: #fff;
+  padding: 100px 0;
+}
+
+#contact {
+  background: #3F465A;
+  padding: 100px 0;
+  color: #fff;
+}
