@@ -11,8 +11,13 @@
   // ============================================
   $(function() {
 
-    // Highlight the active route
-    activeNavLink();
+    // Anchor scrolling
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
 
   });// end document ready
 
@@ -27,55 +32,4 @@
     }, 2000);
   });
 
-  // ============================================
-  // Document scroll
-  // ============================================
-  $(window).scroll(function() {
-    if($(window).scrollTop() > 100) {
-
-    } else {
-
-    }
-  });
-
-  // ============================================
-  // Use body ID to match to active nav link
-  // ============================================
-  function activeNavLink() {
-    let bodyClass = $('body').attr("id");
-    $( "nav .menu li" ).each(function() {
-      if ($(this).attr('data-page') === bodyClass) {
-        $(this).addClass('active');
-      }
-    });
-  }
-
 })();
-
-
-// Shared functions outside of closure
-
-// ============================================
-// Validate form elements
-// ============================================
-function formValidation(elemClass) {
-  // Set form to valid
-  var valid = true;
-  // Loop through form inputs
-  $(elemClass).each(function(index, elem) {
-    // Check if empty
-    if ($(elem).val() == '' || $(elem).val() == null) {
-      // Show label
-      $(elem).prev('label').show();
-      // Set form to invalid
-      valid = false;
-    } else {
-      // Hide label
-      $(elem).prev('label').hide();
-    }
-  });
-  // Return true and submit form if valid
-  if (valid) {
-    return true;
-  }
-}
