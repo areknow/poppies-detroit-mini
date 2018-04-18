@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "title": "this is a title",
+      "body": "this is the body",
+      "date": 123451,
+      "link": "http://eventbrite.com/1"
+    },
+    {
+      "title": "this is a title 2",
+      "body": "this is the body 2",
+      "date": 123452,
+      "link": "http://eventbrite.com/2"
+    }
+  ]
+}

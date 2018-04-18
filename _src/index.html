@@ -3,29 +3,81 @@
   {{> head title="Poppies Detroit"}}
   <body>
 
-    {{> page-loader}}
+    <!-- {{> page-loader}} -->
     {{> nav}}
 
     <div id="hero">
       <div class="inner abs-center">
-        <div class="logo"></div>
+        <img src="/assets/images/hero-logo.svg">
         <div class="tag">Coming summer 2018</div>
       </div>
     </div>
 
-    <div id="events">
+    <section id="events">
       <div class="page-column">
         <h1>Events</h1>
-      </div>
-    </div>
+        <div id="events-list" class="inner-column">
 
-    <div id="contact">
+          <!-- <div class="item">
+            <h2>Restaurant opening</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="meta">
+              <div class="date inline">August 12 2018</div>
+              <a class="arrow inline">
+                <img src="/assets/images/arrow-right.svg">
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <h2>This is another event that takes two lines </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="meta">
+              <div class="date inline">August 12 2018</div>
+              <a class="arrow inline">
+                <img src="/assets/images/arrow-right.svg">
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <h2>Restaurant opening</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="meta">
+              <div class="date inline">August 12 2018</div>
+              <a class="arrow inline">
+                <img src="/assets/images/arrow-right.svg">
+              </a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
       <div class="page-column">
         <h1>Contact</h1>
+        <div class="inner-column">
+          <div class="item">
+            <h2>Want to get in touch?</h2>
+            <p>We're excited to talk to you! Reach out with any questions you might have and we'll get back to you as soon as possible.</p>
+            <div class="email">
+              <input type="email" placeholder="Enter email address">
+              <div class="submit">
+                <img class="abs-center" src="/assets/images/arrow-right.svg">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <div id="footer">
+      <a target="_blank" href="http://miniml.co">
+        <img src="/assets/images/miniml.svg">
+      </a>
+      
     </div>
 
     {{> scripts}}

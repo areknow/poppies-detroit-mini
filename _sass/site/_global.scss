@@ -7,9 +7,9 @@ html {
 }
 body {
   background-color: #ffffff;
-  color: #3a3a3a;
+  color: #3e465b;
   font-size: 14px;
-  font-family: 'TruenoRegular'; 
+  font-family: 'Josefin Slab', serif;
   font-weight: normal; 
   font-style: normal; 
   padding: 0;
@@ -53,7 +53,7 @@ body {
   vertical-align: middle;
 }
 .page-column {
-  max-width: 1170px;
+  max-width: 1000px;
   margin: auto;
 }
 .float-right {
@@ -61,4 +61,20 @@ body {
 }
 .float-left {
   float: left;
+}
+
+
+
+h1 {
+  font-family: Futura;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.06;
 }

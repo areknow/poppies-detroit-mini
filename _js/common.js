@@ -32,4 +32,14 @@
     }, 2000);
   });
 
+  // function renderEvents(params) {
+  //   $.getJSON('assets/data/events.json', function(data) {   
+  //     $.each(data, function(key, value) {
+  //       console.log(data);
+        
+  //       // $("#parent").append("<div>");
+  //     });
+  //   });
+  // }
+
 })();
