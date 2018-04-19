@@ -1,16 +1,22 @@
 {
   "events": [
     {
-      "title": "this is a title",
-      "body": "this is the body",
-      "date": 123451,
+      "title": "Restaurant opening",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "date": 1534046400,
       "link": "http://eventbrite.com/1"
     },
     {
-      "title": "this is a title 2",
-      "body": "this is the body 2",
-      "date": 123452,
+      "title": "This is another event that takes two lines",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "date": 1534737600,
       "link": "http://eventbrite.com/2"
+    },
+    {
+      "title": "Restaurant opening",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "date": 1536120000,
+      "link": "http://eventbrite.com/3"
     }
   ]
 }

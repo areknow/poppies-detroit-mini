@@ -11,6 +11,10 @@ section {
       }
       h2 {
         max-width: 360px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
       p {
         font-size: 18px;
@@ -32,16 +36,17 @@ section {
         }
         &:hover {
           .arrow {
-            margin-right: 20px;
+            margin-right: 35px;
           }
         }
       }
       .email {
         margin-top: 70px;
-        position: relative;
+          border: solid 0.5px #ffbcb3;
+          position: relative;
+        // background: red;
         input {
           font-family: 'Josefin Slab', serif;
-          border: solid 0.5px #ffbcb3;
           background: transparent;
           width: 100%;
           font-size: 18px;
@@ -56,7 +61,7 @@ section {
         :-moz-placeholder { color: #8E929D; }
         .submit {
           width: 48px;
-          height: 48px;
+          height: 55px;
           background: #ffbcb3;
           position: absolute;
           right: 0;
@@ -86,11 +91,6 @@ section {
     text-align: center;
     position: relative;
     display: inline-block;
-    .logo {
-      height: 30px;
-      width: 200px;
-      display: inline-block;
-    }
     .tag {
       font-size: 26px;
       font-weight: 600;
@@ -113,4 +113,42 @@ section {
   background: #2C3140;
   padding: 55px 0;
   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+  body {
+    display: none;
+  }
+  section {
+    padding: 100px 0;
+    .inner-column {
+      padding-top: 26px;
+      width: 350px;
+    }
+  }
+
+
+  #hero {
+    height: 300px;
+    display: none;
+    .inner {
+      img {
+        width: 200px;
+      }
+      .tag {
+        font-size: 16px;
+        font-weight: 600;
+        color: #3e465b;
+        margin-top: 20px;
+      }
+    }
+  }
 }

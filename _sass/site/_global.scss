@@ -78,3 +78,30 @@ h2 {
   font-weight: 700;
   line-height: 1.06;
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .page-column {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-column {
+    max-width: 350px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}

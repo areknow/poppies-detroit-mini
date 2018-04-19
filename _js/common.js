@@ -11,6 +11,8 @@
   // ============================================
   $(function() {
 
+    renderEvents()
+
     // Anchor scrolling
     $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
@@ -32,14 +34,27 @@
     }, 2000);
   });
 
-  // function renderEvents(params) {
-  //   $.getJSON('assets/data/events.json', function(data) {   
-  //     $.each(data, function(key, value) {
-  //       console.log(data);
+  function renderEvents(params) {
+    $.getJSON('assets/data/events.json', function(data) {   
+      $.each(data.events, function(key, value) {
+        console.log(value);
         
-  //       // $("#parent").append("<div>");
-  //     });
-  //   });
-  // }
+        $('#events-list').append(
+          $('<div>', {class: 'item'}).append(
+            $('<h2>').append(
+              $('<a>', {text: value.title, href: value.link})
+            ),
+            $('<p>', {text: value.body}),
+            $('<div>', {class: 'meta'}).append(
+              $('<div>', {class: 'date inline', text: moment.unix(value.date).format('dddd, MMMM Do, YYYY')}),
+              $('<div>', {class: 'arrow inline'}).append(
+                $('<img>', {src: '/assets/images/arrow-right.svg'})
+              )
+            )
+          )
+        )
+      });
+    });
+  }
 
 })();
