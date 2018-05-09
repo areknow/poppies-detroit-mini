@@ -4,19 +4,22 @@
       "title": "Restaurant opening",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "date": 1534046400,
-      "link": "http://eventbrite.com/1"
+      "link": "http://eventbrite.com/1",
+      "visible": false
     },
     {
       "title": "This is another event that takes two lines",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "date": 1534737600,
-      "link": "http://eventbrite.com/2"
+      "link": "http://eventbrite.com/2",
+      "visible": false
     },
     {
       "title": "Restaurant opening",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "date": 1536120000,
-      "link": "http://eventbrite.com/3"
+      "link": "http://eventbrite.com/3",
+      "visible": false
     }
   ]
 }

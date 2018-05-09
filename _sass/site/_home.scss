@@ -42,10 +42,32 @@ section {
       }
       .email {
         margin-top: 70px;
-          border: solid 0.5px #ffbcb3;
+        border: solid 0.5px #ffbcb3;
+        position: relative;
+        .submit-wrapper {
           position: relative;
-        // background: red;
-        input {
+          background: red;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 55px;
+          height: 55px;
+          img {
+            pointer-events: none;
+          }
+          input.submit {
+            width: 55px;
+            height: 55px;
+            background: #ffbcb3;
+            border: 0;
+            cursor: pointer;
+            transition: all .2s ease-out;
+            &:hover {
+              background: #e7aba2;
+            }
+          }
+        }
+        input.textbox {
           font-family: 'Josefin Slab', serif;
           background: transparent;
           width: 100%;
@@ -54,24 +76,14 @@ section {
           color: #ffffff;
           padding: 14px 25px;
           outline: none;
+          border: 0;
+          height: 55px;
         }
         ::-webkit-input-placeholder { color: #8E929D; }
         ::-moz-placeholder { color: #8E929D; }
         :-ms-input-placeholder { color: #8E929D; }
         :-moz-placeholder { color: #8E929D; }
-        .submit {
-          width: 48px;
-          height: 55px;
-          background: #ffbcb3;
-          position: absolute;
-          right: 0;
-          top: 0;
-          cursor: pointer;
-          transition: all .2s ease-out;
-          &:hover {
-            background: #e7aba2;
-          }
-        }
+        
       }
     }
   }
@@ -81,7 +93,7 @@ section {
 
 
 #hero {
-  height: 800px;
+  height: 500px;
   background: #F5BEB5;
   position: relative;
   display: flex;
@@ -91,6 +103,7 @@ section {
     text-align: center;
     position: relative;
     display: inline-block;
+    top: -20px;
     .tag {
       font-size: 26px;
       font-weight: 600;
@@ -102,6 +115,9 @@ section {
 
 #events {
   background: #fff;
+  p {
+    font-size: 20px;
+  }
 }
 
 #contact {
